@@ -25,23 +25,23 @@ public class Pet {
         InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-        System.out.println("Введите пол животного");
+        System.out.print("Введите пол животного: ");
             try {
                 sex = bufferedReader.readLine();
             } catch (Exception e) {
                 System.out.println("Ошибка");
             }
                         
-        System.out.println("Введите вес");
+        System.out.print("Введите вес: ");
             try {
-                weight = Integer.parseInt(bufferedReader.readLine());
+                weight = Double.parseDouble(bufferedReader.readLine());
             } catch (Exception e) {
                 System.out.println("Ошибка. Вес должен быть в цифрах");
             }   
             
-        System.out.println("Введите возраст");
+        System.out.print("Введите возраст: ");
             try {
-                age = Integer.parseInt(bufferedReader.readLine());
+                age = Double.parseDouble(bufferedReader.readLine());
             } catch (Exception e) {
                 System.out.println("Ошибка. Возраст должен быть в цифрах");
             }    
