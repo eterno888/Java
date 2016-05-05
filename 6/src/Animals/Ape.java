@@ -1,5 +1,11 @@
 package Animals;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+
 /**
  * @author ies1541b on 19.04.2016
  */
@@ -12,11 +18,16 @@ public class Ape extends Animal {
     }    
     
     public void iq(){
-        System.out.println("Мой iq = ");
+        
+        InputStream inputStream = System.in;
+        Reader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        
+        System.out.println("Мой IQ = ");
         try {
                 iq = Double.parseDouble(bufferedReader.readLine());
-            } catch (Exception e) {
-                System.out.println("Ошибка. Вес должен быть в цифрах");
+            } catch (IOException | NumberFormatException e) {
+                System.out.println("Ошибка. IQ должен быть в цифрах");
             }   
     }
 }

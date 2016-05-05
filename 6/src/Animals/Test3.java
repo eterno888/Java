@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Animals;
 
 /**
@@ -14,5 +9,13 @@ package Animals;
  * человека от обезьян. Поля и методы разработать самостоятельно.
  */
 public class Test3 {
-    
+   public static void main(String[] args) { 
+    System.out.println("Дедушка Бог ушёл на пенсию, вы заняли его место. "); 
+    System.out.println("Порадовались? Но Вы же не знаете как работает его программа по созданию мира...");
+    System.out.println("Ну что ж теперь делать, пробуй.");
+    System.out.println("Для начала создай рыбу: ");
+    Fish f1 = new Fish();
+    f1.wool();
+    f1.inf();
+    }
 }
