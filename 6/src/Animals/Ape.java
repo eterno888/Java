@@ -13,11 +13,11 @@ public class Ape extends Animal {
        
     public double iq = 0;       // iq
     
-    public void Ape(){
+    public void whoAreYou(){
         System.out.println("Я обезьянка. Я умею ходить на 2 лапах.");
     }    
     
-    public void iq(){
+    public void IQ(){
         
         InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);

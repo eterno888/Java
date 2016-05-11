@@ -8,17 +8,15 @@ package Animals;
 
 public class Fish extends Animal {
     
-    public Fish(){
-    if (age > 120){
-    System.out.print("Ты серьезно? Никто так долго не живет! Не знаешь, так и скажи.");
-    
+    public void check(Animal fish){
+        if(age > 100){
+            System.out.println("Рыбы столько точно не живут! Не знаешь, так и скажи. Возраст будет 2 года.");
+            age = 2;
+        }
     }    
-        
-    }
-    
-    public void wool(){
+            
+    public void whoAreYou(){
         System.out.println("- Я рыба, у меня нету шерсти :c ");
         System.out.println("  Но у меня есть чешуя!) ");
-        System.out.println("  Информация про меня: ");
     }
 }
