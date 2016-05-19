@@ -1,22 +1,21 @@
 package Animals;
 
 /**
- *
- * @author ies1541b on 19.04.2016
- * 
+ * @author Eterno on 18.05.2016
  */
 
 public class Fish extends Animal {
-    
-    public void check(Animal fish){
-        if(age > 100){
-            System.out.println("Рыбы столько точно не живут! Не знаешь, так и скажи. Возраст будет 2 года.");
-            age = 2;
+
+    public void FishVSHuman(Human h1) {
+        if (h1.gender == false) {
+            System.out.println("Человек " + h1.name + " женщина, она не занимается рыбалкой.");
+        } else {
+           if ((h1.gender = true) && (this.weight > h1.weight)) {
+            System.out.println("Человек " + h1.name + " не смог поймать рыбу.");
         }
-    }    
-            
-    public void whoAreYou(){
-        System.out.println("- Я рыба, у меня нету шерсти :c ");
-        System.out.println("  Но у меня есть чешуя!) ");
+        if ((h1.gender = true) && (this.weight < h1.weight)) {
+            System.out.println("Человек " + h1.name + " смог поймать рыбу.");
+        } 
+        }
     }
 }
