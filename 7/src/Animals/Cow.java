@@ -9,10 +9,9 @@ package Animals;
  *
  * @author Eterno on 25.05.2016
  */
-public class Whale extends Cow {
-   
-    @Override
+public class Cow {
+    
     public String getName(){
-        return("Я не корова, Я - кит.");
-    }  
+        return("Я корова.");
+    } 
 }
