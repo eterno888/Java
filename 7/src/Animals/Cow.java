@@ -10,8 +10,8 @@ package Animals;
  * @author Eterno on 25.05.2016
  */
 public class Cow {
-    
+
     public String getName(){
         return("Я корова.");
-    } 
+    }
 }
