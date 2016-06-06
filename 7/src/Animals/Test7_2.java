@@ -28,22 +28,32 @@ public class Test7_2 {
 
         System.out.println(snake.getName());
         snake.voice();
+        snake.isHungry();
+        System.out.println("Возраст " + snake.getAge());
         System.out.println();
 
         System.out.println(dog.getName());
         dog.voice();
+        dog.isHungry();
+        System.out.println("Возраст " + dog.getAge());
         System.out.println();
 
         System.out.println(patrolDog.getName());
         patrolDog.voice();
+        patrolDog.isHungry();
+        System.out.println("Возраст " + patrolDog.getAge());
         System.out.println();
 
         System.out.println(cat.getName());
         cat.voice();
+        cat.isHungry();
+        System.out.println("Возраст " + cat.getAge());
         System.out.println();
 
         System.out.println(fish.getName());
         fish.voice();
+        fish.isHungry();
+        System.out.println("Возраст " + fish.getAge());
         System.out.println();
 
         Pickup pickup = new Pickup();

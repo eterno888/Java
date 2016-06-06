@@ -1,6 +1,5 @@
 package Animals;
 
-import javax.swing.plaf.basic.BasicButtonUI;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -11,7 +10,6 @@ import java.io.Reader;
  * @author Eterno on 05.06.2016
  *
  */
-
 public abstract class Pet {
 
     private String name;
@@ -23,7 +21,7 @@ public abstract class Pet {
     Reader inputStreamReader = new InputStreamReader(inputStream);
     BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
-    public Pet(){
+    public Pet() {
 
         System.out.print("Введите пол животного: ");
         while (true) {
@@ -44,7 +42,7 @@ public abstract class Pet {
         }
     }
 
-    public  void inputName(){
+    public void inputName() {
         String s;
         while (true) {
             try {
@@ -59,12 +57,14 @@ public abstract class Pet {
         setName(s);
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
+
     public int getAge() {
         return age;
     }
@@ -73,13 +73,18 @@ public abstract class Pet {
         this.age = age;
     }
 
-    public boolean isHungry() {
-        return hungry;
+    public void isHungry() {
+        if (hungry == false) {
+            System.out.println("Голодная");
+        } else {
+            System.out.println("Не голодная");
+        }
     }
 
     public void setHungry(boolean hungry) {
         this.hungry = hungry;
     }
+
     public abstract void voice();
 
 }

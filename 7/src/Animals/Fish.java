@@ -1,10 +1,11 @@
 package Animals;
 
 /**
- * Created by Die darling on 05.06.2016.
+ * Created by Eterno on 05.06.2016.
  */
 public class Fish extends Pet {
-    public void voice(){
+
+    public void voice() {
         System.out.println("Оооо");
     }
 

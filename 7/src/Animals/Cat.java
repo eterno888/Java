@@ -12,22 +12,23 @@ import java.io.Reader;
  *
  * @author Eterno on 25.05.2016
  */
-public class Cat extends Pet{
+public class Cat extends Pet {
 
-    public Cat(){}
+    public Cat() {
+    }
 
-    public Cat (String name, int age, boolean hungry) {
+    public Cat(String name, int age, boolean hungry) {
         setName(name);
         setAge(age);
         setHungry(hungry);
     }
 
-    public Cat getChild(){
+    public Cat getChild() {
         System.out.println("Порождение кота: ");
         return new Cat("Феликс", 1, true);
     }
 
-    public void voice(){
+    public void voice() {
         System.out.println("Миу");
     }
 

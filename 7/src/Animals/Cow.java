@@ -11,7 +11,7 @@ package Animals;
  */
 public class Cow {
 
-    public String getName(){
-        return("Я корова.");
+    public String getName() {
+        return ("Я корова.");
     }
 }

@@ -13,7 +13,7 @@ package Animals;
 public class Whale extends Cow {
 
     @Override
-    public String getName(){
-        return("Я не корова, Я - кит.");
+    public String getName() {
+        return ("Я не корова, Я - кит.");
     }
 }
