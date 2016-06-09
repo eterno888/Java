@@ -5,6 +5,7 @@ package Animals;
  */
 public class Pickup implements PassengersAuto, CargoAuto {
 
+    @Override
     public void moveTo(String name, int distance) {
         if (distance > 100) {
             System.out.println("Пикап не может ехать с людьми дальше 100 км.");
@@ -13,6 +14,7 @@ public class Pickup implements PassengersAuto, CargoAuto {
         }
     }
 
+    @Override
     public void moveTo(int distance) {
         if (distance > 150) {
             System.out.println("Пикап не может ехать с грузом дальше 150 км.");

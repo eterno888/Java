@@ -5,6 +5,7 @@ package Animals;
  */
 public class Fish extends Pet {
 
+    @Override
     public void voice() {
         System.out.println("Оооо");
     }
